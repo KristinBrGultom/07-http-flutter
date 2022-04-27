@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/movie.dart';
+import 'package:http_request_api/models/movie.dart';
+
 
 class MovieDetail extends StatelessWidget {
   final Movie movie;
@@ -11,7 +12,6 @@ class MovieDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String path;
-    // ignore: unnecessary_null_comparison
     if (movie.posterPath != null) {
       path = imgPath + movie.posterPath;
     } else {

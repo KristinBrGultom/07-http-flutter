@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
 import '../service/http_service.dart';
 import 'movie_detail.dart';
 
@@ -27,8 +26,8 @@ class _MovieListState extends State<MovieList> {
 
   @override
   void initState() {
-    service = 
-    initialize() as HttpService;
+    service = HttpService();
+    initialize();
     super.initState();
   }
 
@@ -66,8 +65,4 @@ class _MovieListState extends State<MovieList> {
       ),
     );
   }
-}
-
-mixin HttpService {
-  getPopularMovies() {}
 }

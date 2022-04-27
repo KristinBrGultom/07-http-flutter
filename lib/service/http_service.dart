@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import '../models/movie.dart';
 
 class HttpService {
-  final String apiKey = '97e958dc1a5e0a1ec4a6879f08d5e78f';
+  final String apiKey = '8ca8d08399bec8fa96e9d6932a5b0c5b';
   final String baseUrl =
       'https://api.themoviedb.org/3/movie/popular?api_key=';
 
